@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+import { Link } from 'react-router-dom'
+import '../login.css'
 
 const Login = () => {
     const [username, setUsername] = useState('')
@@ -9,23 +10,27 @@ const Login = () => {
         e.preventDefault()
     }
   return (
-    <div>
+    <div className="loginContainer">
         <h3>Login</h3>
-        <form>
-            <label>Enter Teams Name</label>
+        <form className='formContainer'>
+            <label className='loginLabel'>Enter Teams Name</label>
             <input 
                 type='text'
                 name='name'
                 placeholder='Team Name'
+                className="loginInput"
                 />
-            <label>Enter Teams Password</label>
+            <label className='loginLabel'>Enter Teams Password</label>
             <input 
                 type='text'
                 name='password'
                 placeholder='Enter Password'
+                className="loginInput"
             />
-            <button onSubmit={handleLogin}>Login</button>
         </form>
+            <Link to='/bingo'>
+                <button className='loginButton' onSubmit={handleLogin}>Login</button>
+            </Link>
     </div>
     
   )

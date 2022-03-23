@@ -1,0 +1,58 @@
+.bingoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column}
+  
+  .rowOne {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .rowTwo {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .rowThree {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .bingoSquares {
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    transition: ease-in-out 0.5s;
+  }
+  
+  img {
+    height: 10rem;
+    width: 10rem;
+    filter: grayscale(80%);
+    border-radius: 2rem;
+  }
+  img:hover {
+    height: 10rem;
+    width: 10rem;
+    filter: grayscale(50%)
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .bingoSquares {
+      height: 3rem;
+      width: 3rem;
+    }
+    img {
+      height: 3.5rem;
+      width: 3.5rem;
+      filter: grayscale(80%);
+      border-radius: 0.5rem;
+    }
+    img:hover {
+      height: 3.5rem;
+      width: 3.5rem;
+      filter: grayscale(50%);
+    }
+  }
