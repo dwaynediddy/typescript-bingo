@@ -32,9 +32,6 @@ const lineThree = [
 ]
 
 const Bingo = () => {
-    const handleClick = () => {
-
-    }
 
   return (
     <div className='bingoContainer'>

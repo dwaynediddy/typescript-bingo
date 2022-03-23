@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom'
 import '../login.css'
 
 const Login = () => {
-    const [username, setUsername] = useState('')
-
 
     const handleLogin = (e:React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault()
     }
+
   return (
     <div className="loginContainer">
         <h3>Login</h3>
