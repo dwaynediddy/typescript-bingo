@@ -3,8 +3,8 @@ const bingoSquares = [
         rowOne: [
             {title: "this is working", img: 'avatar'},
             {title: "two", img: "claws"},
-            {title: "three"},
-            {title: "four"}
+            {title: "three", img: "claws"},
+            {title: "four", img: "avatar"}
         ]
     },
     // {
@@ -36,10 +36,10 @@ const Bingo = () => {
         <div className='rowOne'>
         {bingoSquares[0].rowOne.map((square, index) => (
             <div key={index} className="bingoSquares">
-                {/* <img 
+                <img 
                      src={require(`../images/${square.img}.png`)}
                      alt={square.title}
-                /> */}
+                />
             </div>
         ))}
         </div>
