@@ -33,9 +33,9 @@ const Login = () => {
                 className="loginInput"
             />
         </form>
-            {/* <Link to='/bingo'> */}
+            <Link to='/bingo'>
                 <button className='loginButton' type='submit'>Login</button>
-            {/* </Link> */}
+            </Link>
     </div>
     
   )
