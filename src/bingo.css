@@ -21,31 +21,19 @@
     justify-content: space-around;
   }
   
-  .unSelected {
+  img {
     border: none;
     background-color: transparent;
     height: 10rem;
     width: 10rem;
     border-radius: 2rem;
     filter: grayscale(80%);
+    cursor: pointer;
   }
   
-  
-  .selected {
+  .bingoBtn {
     border: none;
     background-color: transparent;
-    height: 10rem;
-    width: 10rem;
-    border-radius: 2rem;
-    transition: ease-in-out 0.5s;
-    filter: grayscale(0%)
-  }
-  
-  .bingoSquareImg {
-    border: none;
-    height: 10rem;
-    width: 10rem;
-    border-radius: 2rem;
   }
 
   @media only screen and (max-width: 1100px) {
@@ -55,7 +43,7 @@
       flex-direction: column;
       margin-top: 10rem;
     }
-  .unSelected {
+  img {
     border: none;
     background-color: transparent;
     height: 6rem;
@@ -63,24 +51,7 @@
     border-radius: 2rem;
     filter: grayscale(80%);
   }
-  
-  .selected {
-    border: none;
-    background-color: transparent;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 2rem;
-    transition: ease-in-out 0.5s;
-    filter: grayscale(0%)
-  }
-    .bingoSquareImg {
-      border: none;
-      height: 5rem;
-      width: 5rem;
-      filter: grayscale(80%);
-      border-radius: 0.5rem;
-    }
-  }
+}
   
   @media only screen and (max-width: 600px) {
     .bingoContainer {
@@ -89,7 +60,7 @@
       flex-direction: column;
       margin-top: 10rem;
     }
-    .unSelected {
+    img {
       border: none;
       background-color: transparent;
       height: 3rem;
@@ -98,21 +69,4 @@
       filter: grayscale(80%);
     }
     
-    .selected {
-      border: none;
-      background-color: transparent;
-      height: 3rem;
-      width: 3rem;
-      border-radius: 2rem;
-      transition: ease-in-out 0.5s;
-      filter: grayscale(0%)
-    }
-
-    .bingoSquareImg {
-      border: none;
-      height: 3.5rem;
-      width: 3.5rem;
-      filter: grayscale(80%);
-      border-radius: 0.5rem;
-    }
   }
