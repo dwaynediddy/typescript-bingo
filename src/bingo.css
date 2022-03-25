@@ -20,24 +20,63 @@
     justify-content: space-around;
   }
   
-  .bingoSquares {
+  .unselected {
+    border: none;
+    background-color: transparent;
     height: 10rem;
     width: 10rem;
-    margin: 1rem;
     border-radius: 2rem;
-    transition: ease-in-out 0.5s;
+    filter: grayscale(80%);
   }
   
-  img {
+  
+  .selected {
+    border: none;
+    background-color: transparent;
     height: 10rem;
     width: 10rem;
-    filter: grayscale(80%);
+    border-radius: 2rem;
+    transition: ease-in-out 0.5s;
+    filter: grayscale(0%)
+  }
+  
+  .bingoSquareImg {
+    height: 10rem;
+    width: 10rem;
     border-radius: 2rem;
   }
-  img:hover {
-    height: 10rem;
-    width: 10rem;
-    filter: grayscale(50%)
+
+  @media only screen and (max-width: 1100px) {
+    .bingoContainer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10rem;
+    }
+  .unselected {
+    border: none;
+    background-color: transparent;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 2rem;
+    filter: grayscale(80%);
+  }
+  
+  .selected {
+    border: none;
+    background-color: transparent;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 2rem;
+    transition: ease-in-out 0.5s;
+    filter: grayscale(0%)
+  }
+    .bingoSquareImg {
+      height: 5rem;
+      width: 5rem;
+      filter: grayscale(80%);
+      border-radius: 0.5rem;
+    }
   }
   
   @media only screen and (max-width: 600px) {
@@ -47,19 +86,29 @@
       flex-direction: column;
       margin-top: 10rem;
     }
-    .bingoSquares {
+    .unselected {
+      border: none;
+      background-color: transparent;
       height: 3rem;
       width: 3rem;
+      border-radius: 2rem;
+      filter: grayscale(80%);
     }
-    img {
+    
+    .selected {
+      border: none;
+      background-color: transparent;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 2rem;
+      transition: ease-in-out 0.5s;
+      filter: grayscale(0%)
+    }
+
+    .bingoSquareImg {
       height: 3.5rem;
       width: 3.5rem;
       filter: grayscale(80%);
       border-radius: 0.5rem;
-    }
-    img:hover {
-      height: 3.5rem;
-      width: 3.5rem;
-      filter: grayscale(50%);
     }
   }
