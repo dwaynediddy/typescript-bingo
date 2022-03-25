@@ -5,6 +5,7 @@
   }
   
   .rowOne {
+    border: none;
     width: 60%;
     display: flex;
     justify-content: space-around;
@@ -20,7 +21,7 @@
     justify-content: space-around;
   }
   
-  .unselected {
+  .unSelected {
     border: none;
     background-color: transparent;
     height: 10rem;
@@ -41,6 +42,7 @@
   }
   
   .bingoSquareImg {
+    border: none;
     height: 10rem;
     width: 10rem;
     border-radius: 2rem;
@@ -53,7 +55,7 @@
       flex-direction: column;
       margin-top: 10rem;
     }
-  .unselected {
+  .unSelected {
     border: none;
     background-color: transparent;
     height: 6rem;
@@ -72,6 +74,7 @@
     filter: grayscale(0%)
   }
     .bingoSquareImg {
+      border: none;
       height: 5rem;
       width: 5rem;
       filter: grayscale(80%);
@@ -86,7 +89,7 @@
       flex-direction: column;
       margin-top: 10rem;
     }
-    .unselected {
+    .unSelected {
       border: none;
       background-color: transparent;
       height: 3rem;
@@ -106,6 +109,7 @@
     }
 
     .bingoSquareImg {
+      border: none;
       height: 3.5rem;
       width: 3.5rem;
       filter: grayscale(80%);
