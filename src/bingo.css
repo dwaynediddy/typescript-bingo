@@ -42,10 +42,12 @@ img {
 
 .inactive {
   filter: grayscale(100%);
+  transition: all 1.5s ease-in-out;
 }
 
 .active {
   filter: grayscale(0%);
+  transition: all 1.5s ease-in-out;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -87,18 +89,9 @@ img {
     height: 7rem;
     width: 7rem;
     border-radius: 2rem;
-    transition: all 0.5s ease-in-out;
     cursor: pointer;
   }
 
-  .inactive {
-    filter: grayscale(100%);
-  }
-
-  .active {
-    filter: grayscale(0%);
-
-  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -179,7 +172,6 @@ img {
 
   img {
     border: none;
-    background-color: transparent;
     height: 6rem;
     width: 6rem;
     border-radius: 2rem;
@@ -189,7 +181,6 @@ img {
     height: 6rem;
     width: 6rem;
     border-radius: 2rem;
-    transition: all 0.5s ease-in-out;
     cursor: pointer;
   }
 }
@@ -207,14 +198,15 @@ img {
     width: 4rem;
     border-radius: 2rem;
     }
-    .sq {
-      border: none;
-      height: 4rem;
-      width: 4rem;
-      border-radius: 2rem;
-      transition: all 1.5s ease-in-out;
-      cursor: pointer;
-    }
+
+  .sq {
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+  }
     
   }
 @media only screen and (max-width: 480px) {
@@ -238,13 +230,14 @@ img {
     height: 4rem;
     width: 4rem;
     border-radius: 2rem;
-    }
-    .sq {
-      border: none;
-      height: 4rem;
-      width: 4rem;
-      border-radius: 2rem;
-      cursor: pointer;
-    }
+  }
+
+  .sq {
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
     
   }
