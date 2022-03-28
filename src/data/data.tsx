@@ -1,8 +1,8 @@
 export const lineOne = [
     {id: 1, title: "one", img: 'avatar'},
-    {id: 2,title: "two", img: "claws"},
-    {id: 3,title: "three", img: "avatar"},
-    {id: 4,title: "four", img: "claws"},
+    {id: 2, title: "two", img: "claws"},
+    {id: 3, title: "three", img: "avatar"},
+    {id: 4, title: "four", img: "claws"},
 ]
 
 export const lineTwo = [
