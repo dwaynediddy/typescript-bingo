@@ -151,7 +151,7 @@ img {
 
   .active {
     filter: grayscale(0%);
-
+    transition: all 1.5s ease-in-out;
   }
 }
 
@@ -212,7 +212,38 @@ img {
       height: 4rem;
       width: 4rem;
       border-radius: 2rem;
-      transition: all 0.5s ease-in-out;
+      transition: all 1.5s ease-in-out;
+      cursor: pointer;
+    }
+    
+  }
+@media only screen and (max-width: 480px) {
+  .bingoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .bingoTiles {
+    border: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  img {
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    }
+    .sq {
+      border: none;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 2rem;
       cursor: pointer;
     }
     
