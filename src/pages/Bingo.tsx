@@ -47,12 +47,12 @@ const Bingo = () => {
     }
 
   return (
-    <div className='bingoContainer'>
+      <div className='bingoContainer'>
         <div className='headerContainer'>
         <h1>Bingo</h1>
-        <button onClick={() => setState({ isPaneOpen: true })}>
-            <h2>Rules</h2>
-         </button>
+        <button className='ruleBtn'onClick={() => setState({ isPaneOpen: true })}>
+             Rules
+        </button>
         <SlidingPane
             className="some-custom-class"
             overlayClassName="some-custom-overlay-class"
