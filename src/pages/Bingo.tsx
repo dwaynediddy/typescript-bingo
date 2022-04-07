@@ -1,7 +1,16 @@
 import { useState } from 'react'
 import '../bingo.css'
 
+import SlidingPane from "react-sliding-pane"
+import "react-sliding-pane/dist/react-sliding-pane.css"
+
+import Rules from '../components/Rules'
+
 const Bingo = () => {
+    const [state, setState] = useState({
+        isPaneOpen: false,
+      });
+
     const [active, setActive] = useState({
         squares: [
             {id: 1, title: "one", img: 'avatar', toggled: false},
@@ -38,8 +47,22 @@ const Bingo = () => {
     }
 
   return (
-    <div className='bingoContainer'>
+      <div className='bingoContainer'>
+        <div className='headerContainer'>
         <h1>Bingo</h1>
+        <button className='ruleBtn'onClick={() => setState({ isPaneOpen: true })}>
+             Rules
+        </button>
+        <SlidingPane
+            className="some-custom-class"
+            overlayClassName="some-custom-overlay-class"
+            isOpen={state.isPaneOpen}
+            title='Rules'
+            onRequestClose={() => {
+                setState({ isPaneOpen: false })
+            }} children={<Rules />} 
+        />
+        </div>
         <div className='bingoTiles'>   
             {active.squares.map((square, i) => (
                 <div key={i} className={toggleActiveStyles(i)} onClick={() => {toggleActive(i)}}>

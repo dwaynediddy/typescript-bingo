@@ -2,6 +2,7 @@ import './App.css'
 import { Routes, Route } from "react-router-dom"
 import Login from './pages/Login'
 import Bingo from './pages/Bingo'
+import Rules from './components/Rules'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/bingo" element={<Bingo />} />
+        <Route path="/rules" element={<Rules />} />
       </Routes>
     </div>
   )
