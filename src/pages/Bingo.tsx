@@ -1,15 +1,16 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import '../bingo.css'
 
 import SlidingPane from "react-sliding-pane"
 import "react-sliding-pane/dist/react-sliding-pane.css"
+import Confetti from 'react-confetti'
 
 import Rules from '../components/Rules'
 
 const Bingo = () => {
     const [state, setState] = useState({
         isPaneOpen: false,
-      });
+      })
 
     const [active, setActive] = useState({
         squares: [
@@ -28,6 +29,9 @@ const Bingo = () => {
         ]
     })
 
+    const [show, setShow] = useState(false)
+    const confettiRef = useRef(null)
+
     const toggleActive = (i: any) => {
         let arrayCopy = [...active.squares]
 
@@ -45,6 +49,10 @@ const Bingo = () => {
             return 'btn inactive'
         }
     }
+
+    const handleShow = (toggle: boolean) => {
+        setShow(toggle)
+      }
 
   return (
       <div className='bingoContainer'>
@@ -72,6 +80,20 @@ const Bingo = () => {
                         />
                 </div>
             ))}
+        </div>
+        <div className="bingoButtonContainer">
+            <div
+            onMouseLeave={() => handleShow(false)}
+            ref={confettiRef}>
+            <button
+                onClick={() => handleShow(true)}
+            >B-I-N-G-O</button>
+            <Confetti
+                recycle={show}
+                // run={false}
+                numberOfPieces={90}
+            />
+        </div>
         </div>
     </div>
   )
