@@ -1,6 +1,6 @@
 import './rule.css'
 
-const exampleImg = require('../images/claws.png')
+const exampleImg = require('../images/example.png')
 const ruleTitles = 'Rules'
 
 const rules = [
@@ -42,6 +42,7 @@ const Rules = () => {
         <p className="ruleText">{rule.rule}</p>
       ))}
       <img
+      className="exampleImg"
         src={exampleImg}
         alt='example'
       />
